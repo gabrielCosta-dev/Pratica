@@ -55,7 +55,8 @@ main{
 pre{
     font-family: var(--fonte-corpo);
     padding: 10px; font-size: 2em; line-height: 2em;
-    margin: 0px
+    margin: 0px;
+    font-size: 3vw;
 }
 
 main > section h3{
@@ -69,22 +70,16 @@ main p{
     font-style: italic; font-family: var(--fonte-destaque);
 }
 
-/* Rodapé */
-footer{
-    background-color: var(--cor1);
-    text-align: center; color: white;
-    padding: 10px; font-size: 1.1em;
-}
-
 #prlx1, #prlx2{
     background-repeat: no-repeat;
     background-size: cover; background-attachment: fixed;
-    height: 90vh;
+    height: 90vh; box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.397);
 }
 
-/* #prlx1 pre, #prlx2 pre{
-    width: 10vw;
-} */
+#prlx1 pre, #prlx2 pre{
+    display: inline-block; font-size: 3vw;
+    width: 50vw; height: 100vh;
+}
 
 #prlx1{
     background-image: url(../imagens/tempo.jpg); background-position: right center;
@@ -94,5 +89,14 @@ footer{
     background-image: url(../imagens/petalas.png); background-position: right top;
     color: white;
 }
+
+
+/* Rodapé */
+footer{
+    background-color: var(--cor1);
+    text-align: center; color: white;
+    padding: 10px; font-size: 1.1em;
+}
+
 
 
