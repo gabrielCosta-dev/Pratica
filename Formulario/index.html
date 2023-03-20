@@ -12,37 +12,26 @@
     <main>
         <img src="img/user.png" alt="">
 
-        <legend class="legenda">Usuário:</legend>
-        <input type="email" placeholder="usuario@nol.com" class="input">
+        <form action="get">
+            <fieldset>
+                <legend>Dados de inscrição</legend>
+                <label for="email" class="label">E-mail:</label>
+                <input type="email" placeholder="usuario@nol.com" class="input" name="email" id="email" required>
 
-        <legend class="legenda">Senha:</legend>
-        <input type="password" placeholder="********" class="input">
+                <label for="senha" class="label">Senha:</label>
+                <input type="password" placeholder="********" class="input" name="senha" id="senha" required>
 
-        <legend class="legenda">Telefone:</legend>
-        <input type="tel" placeholder="(55)555-555-555" class="input">
+                <label class="label" for="tel">Telefone:</label>
+                <input type="tel" placeholder="(55)555-555-555" class="input" name="tel" id="tel">
 
-        <legend class="legenda-texto">Deixe uma sugestão:</legend>
-        <input type="text" class="input texto">
-        <br>
-        <input type="submit" id="submit">
+                <label class="legenda-texto" for="texto">Deixe uma sugestão:</label>
+                <input type="text" class="input texto" name="texto" id="texto">
 
-        <section>
-            <h3>Nos diga seu sexo</h3>
-            <input type="radio" class="radio"><strong>Homem</strong>
-            
-            <input type="radio" class="radio"><strong>Mulher</strong>
+                <br>
 
-            <input type="radio" class="radio"><strong>Outro</strong>
-        </section>
-
-        <section id="checkbox">
-            <h3>Qual sua cor preferida</h3>
-            <input type="checkbox" class="check"><strong>Vermelho</strong>
-            <input type="checkbox"><strong>Azul</strong>
-            <input type="checkbox"><strong>Amarelo</strong>
-            <input type="checkbox"><strong>Verde</strong>
-            <input type="checkbox"><strong>Roxo</strong>
-        </section>
+                <input type="submit" value="Enviar" id="submit">
+            </fieldset>
+        </form>
     </main>
 </body>
 </html>

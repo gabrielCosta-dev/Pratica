@@ -37,7 +37,11 @@ main > img{
     margin: -59px auto 10px auto;
 }
 
-main .legenda{
+fieldset{
+    border: none;
+}
+
+main .label{
     color: white;
     width: 400px;
     display: block;
@@ -87,28 +91,4 @@ main #submit{
 main #submit:hover{
     color: var(--cor4);
     background-color: var(--cor0);
-}
-
-.radio{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding: 5px; margin: 5px;
-    
-}
-
-h3{
-    background-color: var(--cor2);
-    padding: 5px; margin: 5px;
-    color: white;
-}
-
-section strong{
-    border-bottom: 2px solid var(--cor1);
-    margin: 5px;
-    color: var(--cor3);
-}
-
-#checkbox{
-    margin-bottom: 5px;
 }
