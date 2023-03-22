@@ -6,29 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css" media="all">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     
 </head>
 <body>
     <main>
-        <section>
-            <div>
-                <h1></h1>
-                <p></p>
-            </div>
+        <section id="login">
+            <div id="foto"></div>
 
-            <div>
-                <form action="" method="post" autocomplete="on">
-                    <div>
+            <div id="formulario">
+                <form action="login.php" method="post" autocomplete="on">
+                    <h1>Login</h1>
+                    <p>Bem-vindo(a) de volta. Por favor insira seus dados de login para acessar seu perfil.</p>
+
+                    <div class="campo">
+                        <label for="iemail" class="icone">
+                            <span class="material-symbols-outlined">
+                                face
+                            </span>
+                        </label>
+
                         <input type="email" name="iemail" id="iemail" required>
-                        <label for="iemail">Email</label>
+                        <label for="iemail" class="oculto">Email</label>
                     </div>
 
-                    <div>
+                    <div class="campo">
+                        <label for="isenha" class="icone">
+                            <span class="material-symbols-outlined">
+                                key
+                            </span>
+                        </label>
 
+                        <input type="password" name="isenha" id="isenha" required minlength="8" maxlength="16">
+                        <label for="isenha" class="oculto">Senha</label>
                     </div>
 
                     <div>
                         <input type="submit" name="enviar" value="Enviar">
+                        <a href="#">Esqueceu sua senha?
+                            <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                        </a>
                     </div>
                 </form>
             </div>
