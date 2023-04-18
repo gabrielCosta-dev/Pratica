@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
@@ -21,7 +28,8 @@
 
 body{
     background-color: var(--cor2);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
                                 /* Cabeçalho */
@@ -29,8 +37,12 @@ header{
     font-family: var(--fonte-destaque);
     width: 100%; height: 210px;
     background-color: var(--cor5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
 }
 
 h1{
@@ -51,6 +63,7 @@ main > section{
     width: 59%;
     float: left; font-family: var(--fonte);
     background-color: var(--cor5);
+    margin-bottom: 2px;
 }
 
 main > section h2{
@@ -67,9 +80,9 @@ main > section p{
 }
 
 main > aside{
-    width: 35%; float: right;
+    width: 38%; float: right;
     background-color: var(--cor1);
-    padding: 10px;
+    padding: 10px; font-family: var(--fonte-form);
 }
 
 /* Formulário */
@@ -83,7 +96,7 @@ fieldset{
 }
 
 legend{
-    margin: 10px;
+     font-size: 0.8em; display: none;
 }
 
 label{
@@ -97,10 +110,26 @@ input{
     width: 100%; margin-bottom: 200px;
     border: none; background-color: var(--cor2);
     color: #fff;
-    
+}
+
+input[type='submit']{
+    height: 40px; font-size: 1.2em;
+    cursor: pointer; border-radius: 5px;
+}
+
+input[type='submit']:hover{
+    background-color: var(--cor5);
+    text-shadow: 1px 1px 5px var(--cor1);
 }
 
 /* Rodapé */
 footer{
-    clear: both;
+    clear: both; font-family: var(--fonte-destaque);
+    background-color: var(--cor5); color: #fff;
+    text-align: center; padding: 10px;
+}
+
+footer p a{
+    color: var(--cor1); text-decoration: none;
+    margin-left: 2px;
 }
