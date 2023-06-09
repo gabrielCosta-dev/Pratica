@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 #root{
+    --cor1: #5E0005; --cor2: #9E0008; --cor3: #C4000A; --cor4: #DF010D;
+    --cor5: #EB000C;
+
     --fonte-principal: -apple-system, Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -9,5 +12,6 @@
 }
 
 body{
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-principal); background-color: #5E0005;
+    /* background-image: linear-gradient(to bottom, var(--cor2), var(--cor5)); */
 }
